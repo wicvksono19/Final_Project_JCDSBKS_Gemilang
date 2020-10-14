@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Website Title -->
+    <title>BCCP GENERATOR</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <a class="navbar-brand logo-text page-scroll" href="http://localhost:1212/">Home</a>
+        <a class="navbar-brand logo-text page-scroll" href="http://localhost:1212/statistic">Statistics</a>
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+    <!-- Result -->
+    <div id="request" class="form-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <h2>CHURN PREDICTION FOR :</h2>
+                        <p>From your input before, this is result from calculation and prediction how many people that will go out or leave the bank</p>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <div class="form-group">
+                        <b>Region: </b> {{region}}<br>
+                        <b>Gender: </b> {{gender}}<br>
+                        <b>Age: </b> {{age}}<br>
+                        <b>Num of Products: </b> {{product}}<br>
+                        <b>Tenure: </b> {{tenure}}<br>
+                        <b>Credit Score: </b> {{credit}}<br>
+                        <b>Credit Card: </b> {{ccard}}<br>
+                        <b>Active Member: </b> {{active}}<br>
+                        <b>Balance: </b> {{balance}}<br>
+                        <b>Salary: </b> {{salary}}<br>
+                    </div>
+                    <div class="p1">
+                        The Result is...
+                    </div>
+                    <div class="p2">
+                        <label for="result">{{proba}}% {{result}}</label></div>
+                    <hr>
+                    <div class="form-group col-lg-12">
+                        <a href="http://localhost:1212/predict" target="_self" >
+                        <button type="submit" class="form-control-submit-button">PREDICT AGAIN</button>
+                        </a>
+                    </div>
+                </div> <!-- end of form-container -->
+            </div> <!-- end of col -->
+        </div>
+    </div>
+</div>
+<!-- Scripts -->
+<script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+<script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+<script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
